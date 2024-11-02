@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Matematik Quizinde Çıkan Sonuca Göre İşlem Yapma</title>
+</head>
+<body>
+    <section id="header">
+        <div class="bg-white text-center py-4">
+            <div class="container">
+                <h2 class="text-danger display-4">Matematik Testi</h2>
+            </div>
+        </div>
+    </section>
+    <div class="result d-none py-4 bg-white text-center">
+        <div class="container lead">
+            <p><span class="text-danger display-4 p-3">0%</span>Doğru Cevap Oranı</p>
+            <p id="successMessage" class="d-none text-danger">Bravo! Bir Sonraki Egzersiz Grubuna Geçebilirsiniz</p>
+        </div>
+    </div>
+    <section id="questions">
+        <div class="bg-secondary py-3">
+            <div class="container">
+                <form class="question-form text-white">
+                    <div class="my-4">
+                        <p class="lead">1-) 3 + 5 İşleminin Sonucu Nedir?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q1" value="8" checked>
+                            <label class="form-check-label" for="exampleRadios1">8</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q1" value="7">
+                            <label class="form-check-label" for="exampleRadios2">7</label>
+                          </div>
+                    </div>
+                    <div class="my-4">
+                        <p class="lead">2-) 5 * 2 İşleminin Sonucu Nedir?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q2" value="5" checked>
+                            <label class="form-check-label" for="exampleRadios1">5</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q2" value="10">
+                            <label class="form-check-label" for="exampleRadios2">10</label>
+                          </div>
+                    </div>
+                    <div class="my-4">
+                        <p class="lead">3-) 12 / 4 İşleminin Sonucu Nedir?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q3" value="3" checked>
+                            <label class="form-check-label" for="exampleRadios1">3</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q3" value="6">
+                            <label class="form-check-label" for="exampleRadios2">6</label>
+                          </div>
+                    </div>
+                    <div class="my-4">
+                        <p class="lead">4-) 5 ^ 2 İşleminin Sonucu Nedir?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q4" value="15" checked>
+                            <label class="form-check-label" for="exampleRadios1">15</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="q4" value="25">
+                            <label class="form-check-label" for="exampleRadios2">25</label>
+                          </div>
+                    </div>
+                    <div>
+                        <input type="submit" class="btn btn-danger" value="Anketi Tamamla">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>
